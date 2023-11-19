@@ -1,15 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package LampAndStudent;
 
-/**
- *
- * @author User
- */
-public class Lamp {
+
+class Lamp {
+    boolean isOn;
+    void turnOn(){
+        isOn = true;
+        System.out.println("Lights on? " + isOn);
+    }
     
+    void turnOff(){
+        isOn = false;
+        System.out.println("Lights on? " + isOn);
+    }
+}
+
+class Main{
+    public static void main(String [] args){
+        Lamp led = new Lamp();
+        Lamp halogen = new Lamp();
+        led.turnOn();
+        halogen.turnOff();
+    }
 }
