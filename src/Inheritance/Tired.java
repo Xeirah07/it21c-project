@@ -1,15 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ package Inheritance;
 
-package Inheritance;
-
-/**
- *
- * @author User
- */
 public class Tired {
+    String name;
     
+    Tired(String name){
+        this.name= name;
+    }
+    
+    void Sleep(){
+        System.out.println(name + " is sleepppyy");
+    }
+    void Hungry(){
+        System.out.println(name + " is hungryyy");
+    }
 }
+
